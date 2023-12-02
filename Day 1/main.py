@@ -3,7 +3,7 @@ from Util.file_reader import get_lines
 def main():
     file = open("input.txt")
     lines = get_lines(file, True)
-    #task1(lines)
+    task1(lines)
     task2(lines)
 
 
@@ -39,7 +39,7 @@ def task2(lines):
                 number_positions[x] = line[x]
         sorted_number_positions = dict(sorted(number_positions.items()))
         value_arr.append(int(list(sorted_number_positions.values())[0] + list(sorted_number_positions.values())[-1]))
-    # Answer to first task
+    # Answer to second task
     print(sum(value_arr))
 
 
